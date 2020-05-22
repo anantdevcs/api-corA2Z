@@ -14,15 +14,15 @@ def index():
     #new_model = tf.keras.models.load_model('saved_model.h5')
 
     try:
-        import pandas as pd
+        import tensorflow as tf 
     except ImportError:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", 'pandas'])
+        subprocess.check_call([sys.executable, "-m", "pip", "install", 'tensorflow'])
     finally:
-        import pandas as pd
+        import tensorflow as tf
 
         
 
-    v = pd.__version__
+    v = tf.__version__ 
 
     return f'Hello WOrld  dee {v} '
 
