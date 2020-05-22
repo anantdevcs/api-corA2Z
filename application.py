@@ -13,13 +13,15 @@ def index():
     #print("load started")
     #new_model = tf.keras.models.load_model('saved_model.h5')
 
-    try:
-        import tensorflow as tf 
-    except ImportError:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", 'tensorflow'])
-    finally:
-        import tensorflow as tf
+    # try:
+    #     import tensorflow as tf 
+    # except ImportError:
+    #     subprocess.check_call([sys.executable, "-m", "pip", "install", 'tensorflow'])
+    # finally:
+    #     import tensorflow as tf
+    subprocess.check_call([sys.executable, "-m", "pip", "install", 'tensorflow'])
 
+    import tensorflow as tf
         
 
     v = tf.__version__ 
