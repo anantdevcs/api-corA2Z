@@ -1,14 +1,14 @@
 from flask import Flask
-import tensorflow as tf
+#import tensorflow as tf
 app = Flask(__name__)
 
 @app.route('/')
 
 def index():
-    print("load started")
-    new_model = tf.keras.models.load_model('saved_model.h5')
+    #print("load started")
+    #new_model = tf.keras.models.load_model('saved_model.h5')
 
-    return f'Hello WOrld {new_model.summary()}  dee '
+    return f'Hello WOrld  dee '
 
 
 if __name__ == '__main__':
