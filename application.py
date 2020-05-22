@@ -19,9 +19,9 @@ def index():
     #     subprocess.check_call([sys.executable, "-m", "pip", "install", 'tensorflow'])
     # finally:
     #     import tensorflow as tf
-    subprocess.check_call([sys.executable, "-m", "pip", "install", 'tensorflow'])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", 'scipy'])
 
-    import tensorflow as tf
+    import scipy as tf
         
 
     v = tf.__version__ 
